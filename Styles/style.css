@@ -51,13 +51,22 @@ button:hover{
 }
 
 /* header css */
-header {
+/* header {
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 300%
   );
+} */
+header {
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,1),rgba(0,0,0,.7),rgba(0,0,0,.7),rgba(0,0,0,.7),rgba(0,0,0,1) 900%);
+  
 }
+
+
+
 /* 1. nav css */
 .navbar {
   justify-content: space-between;
@@ -79,7 +88,7 @@ header {
   font-weight: 800px;
 }
 .nav-r ul {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 39px;
   padding: 12px 22px 12px 5px;
 }
@@ -420,11 +429,15 @@ table,
         /* align-items: center;
         justify-content: center; */
         text-align: center;
+        gap: 20px;
+        
         
       }
-      .team-info{
-        
+      .team-info p{
+        letter-spacing: 0.3px;
+
       }
+      
 .member{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -474,13 +487,19 @@ background-image: linear-gradient(
   rgba(15, 14, 14, 0.3)
 ), url(../images/trainer3.png);
 }
-.member-4{
+/* .member-4{
   background-image: linear-gradient(
     rgba(10, 10, 10, 0.3),
     rgba(15, 14, 14, 0.3)
   ), url(../images/trainer4.png);
   background-size: cover;
-}
+} */
+ .member-4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+ }
 .member-5{
   background-image: linear-gradient(
     rgba(10, 10, 10, 0.3),
@@ -503,9 +522,18 @@ footer{
 
 }
 .footer{
-  grid-template-columns: repeat(1, 70% ) 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(1, 50% ) 1fr 1fr;
+  grid-gap: 70px;
   padding-top: 20px;
+}
+
+.footer-content-1{
+  text-align: left;
+}
+
+.footer-content-1 h1{
+  font-size: 4.375rem;
+  margin: 0px;
 }
 
 .footer-content-2, .footer-content-3 h1{
@@ -656,6 +684,7 @@ footer{
   .habit-content-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .banner {
