@@ -423,6 +423,130 @@ table,
         border: 1px solid white;
         padding: 5px;
       }
+
+
+
+
+/* Form */
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* border: 1px solid aqua; */
+  /* padding: 10px; */
+  gap:10px;
+ 
+}
+input{
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255,.1);;
+  padding: 10px;
+  border-radius: 8px;
+  /* color: rgba(255, 255, 255, 0.6); */
+}
+
+select{
+  width: 100%;
+  border: none;
+  /* background-color: rgb(236, 213, 213); */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  /* color: rgba(255, 255, 255, 0.6); */
+  border-radius: 8px;
+}
+.grid-container > div{
+  overflow: hidden;
+  
+  /* padding: 10px; */
+  border-radius: 8px;
+  
+  
+}
+
+.grid-1{
+  grid-column: 1/7;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 40px 12px 20px;
+}
+.grid-2{
+ grid-column: 7 / -1;
+ color: rgba(255, 255, 255, 0.6);
+ background: rgba(255, 255, 255, 0.1);
+ padding: 12px 40px 12px 20px;
+}
+.grid-3{
+  grid-row: 2;
+  grid-column: 1/ 7;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 40px 12px 20px;
+}
+
+.grid-4{
+  grid-row: 2;
+  grid-column: 7 / -1;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px 12px 20px;
+  
+}
+.grid-5{
+  grid-row: 3;
+  grid-column: 1 / -1;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px 12px 20px;
+  
+}
+
+/* form button{
+  width:224px;
+  height: auto;
+} */
+ .grid-6{
+  grid-row: 4;
+  grid-column: 1 / 5;
+  
+
+  
+ }
+ .grid-6 button{
+  width: 100%;
+  background: rgb(230, 83, 60);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  color: white;
+  padding: 10px;
+ }
+/* form button{
+  grid-column: 1/5;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  color: white;
+} */
+select option{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* our team css */
       .team{
         flex-direction: column;
@@ -650,6 +774,15 @@ footer{
   }
   .calculator-info{
     grid-template-columns: 1fr;
+  }
+
+  #calculator-width{
+    max-width: 100%;
+    margin: 0px;
+  }
+
+  .grid-6{
+    grid-column: 1/7;
   }
   /* team */
   .member{
@@ -972,6 +1105,10 @@ footer{
   color: white;
   margin-bottom: 8px;
   margin-top: 12px;
+}
+
+.grid-6{
+  grid-column: 1/8;
 }
  
 }

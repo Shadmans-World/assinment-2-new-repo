@@ -142,12 +142,12 @@
             </div>
          </section>
          <!-- calculator section -->
-         <section class="calculator d-flex">
+         <section class="calculator d-flex" ">
             <h1 class="title">BMI Calculator</h1>
             <p class="description">A BMI calculator assesses body fat by dividing weight in kilograms by height in meters squared, indicating weight status.</p>
          </section>
          <!-- Calculator form & table -->
-          <div id="calculator-width">
+          <div id="calculator-width" style="background: rgb(34, 34, 34);">
             <section class="calculator-info container d-grid">
                 <div class="calculator-table">
                     <h1>BMI Calculator Chart</h1>
@@ -177,20 +177,44 @@
                 </div>
                 <div class="table-form">
                     <h1>Calculate Your BMI</h1>
-                    <p>BMI calculator divides weight in kilograms by height in meters squared. <br> Use this formula: BMI = weight / height².</p>
+                    <p class="description">BMI calculator divides weight in kilograms by height in meters squared. <br> Use this formula: BMI = weight / height².</p>
 
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Height/cm">
-                        <input type="text" name="" id="" placeholder="Weight/kg">
-                        <input type="text" name="" id="" placeholder="Age">
-                        <select name="" id="" placeholder="Sex">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                        
-                        
+                    <div class="form-container">
+                        <form action="">
+                          <div class="grid-container">
+                            <div class="grid-1 ">
+                              <input type="text" id="height" name="height" placeholder="Height/cm">
+                            </div>
+                            <div class="grid-2">
+                              <input type="text" id="weight" name="weight" placeholder="Weight/kg">
+                            </div>
+                            <div class="grid-3">
+                              <input type="text" id="age" name="age" placeholder="Age">
+                            </div>
+                            <div class="grid-4">
+                              <select id="sex" name="sex">
+                                <option value="" disabled selected>Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                              </select>
+                            </div>
+                            <div class="grid-5">
+                              <select id="activity-factor" name="activity-factor">
+                                <option value="" disabled selected>Select an activity factor</option>
+                                
+                            </select>
+                            </div>
+                            <div class="grid-6">
+                                <button>Calculate</button>
+                            </div>
+                            
+                          </div>
+                          
+                        </form>
+                      </div>
 
-                    </form>
+                   
+                
                 </div>
             </section>
           </div>
