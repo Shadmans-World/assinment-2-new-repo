@@ -315,6 +315,7 @@ button {
 main {
   /* margin-top: -48px; */
   background-color: black;
+  padding-bottom: 30px;
 }
 
 .habit {
@@ -378,6 +379,10 @@ main {
 }
 .run-content-2 img {
   border-radius: 16px;
+}
+
+.run-content-3{
+  display: none;
 }
 
 
@@ -817,12 +822,24 @@ footer{
     .run-content-2{
         width: 100%;
     } */
+  
   .run-content-2 img {
     width: 100%;
   }
   .run-content-1 button {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .run-content-2{
+    display: none;
+  }
+  .run-content-3{
+    display: block;
+  }
+  .run-content-3 img{
+    width: 100%;
+    border-radius: 16px;
   }
   /* calculator */
   .calculator{
