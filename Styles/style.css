@@ -644,8 +644,59 @@ select option{
       ), url(../images/trainer6.png);
     }
     
+/* Video Section */
+    .video-container{
+      border: 1px solid gray;
+      padding: 10px;
+      border-radius: 16px;
+      
+    }
+    .video-head{
+      text-align: center;
+      margin: 0 auto;
+    }    
+    .video-head h1{
+      margin-top: 5px;
+      margin-bottom: 1px;
+    }
+    .video-head p{
+      margin-top: 0px;
+    }
+    .video-span{
+      font-family: miamafont;
+      font-size: 6rem;
+    }
+    .video-content h4{
+      font-size: 2rem;
+      color: aliceblue;
+      margin-bottom: 3px;
+    }
+    .video-content p{
+      font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+    }
+.video-content{
+  margin-top: 100px;
+  grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+gap: 20px;
+padding: 20px;
+}
+.box{
+  text-align: center;
+  margin-bottom: 50px;
 
+}
 
+.box iframe{
+  border-radius: 8px;
+  transition: 1s;
+  width: 100%;
+}
+.box iframe:hover{
+  transform: scale(1.2);
+}
 
 /* footer */
 footer{
@@ -807,6 +858,15 @@ footer{
   .footer{
     grid-template-columns: 1fr;
   }
+
+  /* video */
+  .video-content{
+    margin-top: 100px;
+    grid-template-columns:1fr;
+    gap: 10px;
+  }
+  
+  
 }
 
 /* medium device */
@@ -944,6 +1004,12 @@ footer{
     margin-top: 12px;
   }
 
+  .video-content{
+    
+    margin-top: 100px;
+   grid-template-columns: repeat(3,1fr);
+  }
+ 
 }
 
 
@@ -1025,6 +1091,12 @@ footer{
     margin-bottom: 8px;
     margin-top: 12px;
   }
+    /* video */
+    .video-content{
+    
+      margin-top: 100px;
+     grid-template-columns:1fr;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width:375px) {
@@ -1121,6 +1193,13 @@ footer{
 .grid-6{
   grid-column: 1/8;
 }
+
+/* video */
+.video-content{
+    
+  margin-top: 100px;
+ grid-template-columns:1fr;
+}
  
 }
 
@@ -1195,7 +1274,12 @@ footer{
     margin-bottom: 8px;
     margin-top: 12px;
   }
-  
+  /* video */
+  .video-content{
+    
+    margin-top: 100px;
+   grid-template-columns: repeat(3,1fr)
+  }
 }  
 
 @media screen and (min-width:425px) and (max-width:576px){
@@ -1215,6 +1299,12 @@ footer{
     position: absolute;
     top: 176px;
     left: 130px;
+  }
+  /* video */
+  .video-content{
+    
+    margin-top: 100px;
+   grid-template-columns:1fr;
   }
 }
 
